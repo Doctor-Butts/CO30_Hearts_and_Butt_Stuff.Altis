@@ -1,4 +1,4 @@
-hint "Please use the cache teleport responsibly :)"
+hint "Please use the cache teleport responsibly :)";
 sleep 5;
 
 if (serverCommandAvailable "#kick") then

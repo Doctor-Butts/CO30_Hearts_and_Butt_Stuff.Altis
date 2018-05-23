@@ -39,4 +39,5 @@ sleep 10;
 
     [] spawn {[] call btc_fnc_cache_find_pos;};
 	} else {
-	hint "Cache not found, please place closer inside of Bomb House"; };
+	hint "Cache not found, please place closer inside of Bomb House"; 
+	};

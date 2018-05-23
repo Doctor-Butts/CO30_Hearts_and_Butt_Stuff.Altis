@@ -8,18 +8,18 @@ class EditorData
 	toggles=514;
 	class ItemIDProvider
 	{
-		nextID=263;
+		nextID=267;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=5;
 	};
 	class Camera
 	{
-		pos[]={15121.469,52.786713,17303.674};
-		dir[]={0.66912615,-0.43032071,-0.60608566};
-		up[]={0.31904778,0.90257132,-0.28898841};
-		aside[]={-0.6714254,9.9441968e-007,-0.74126482};
+		pos[]={15139.724,52.786713,17185.59};
+		dir[]={0.21310501,-0.48274165,0.84958512};
+		up[]={0.11748221,0.87565452,0.46836978};
+		aside[]={0.97009331,5.0985545e-007,-0.24332951};
 	};
 };
 binarizationWanted=0;
@@ -64,13 +64,14 @@ addons[]=
 	"A3_Modules_F",
 	"rhsusf_c_markvsoc",
 	"A3_Boat_F_Boat_Transport_01",
-	"A3_Boat_F_Beta_SDV_01"
+	"A3_Boat_F_Beta_SDV_01",
+	"A3_Ui_F_Orange"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=37;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -318,6 +319,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item36
+		{
+			className="A3_Ui_F_Orange";
+			name="Arma 3 Orange - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 randomSeed=4660373;
@@ -432,7 +440,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=160;
+		items=163;
 		class Item0
 		{
 			dataType="Marker";
@@ -445,12 +453,11 @@ class Mission
 		class Item1
 		{
 			dataType="Marker";
-			position[]={15130.687,24.171291,17227.932};
+			position[]={15197.625,24.171,17182.887};
 			name="btc_base";
 			type="flag_NATO";
-			angle=0.47364682;
 			id=1;
-			atlOffset=6.2612915;
+			atlOffset=6.261446;
 		};
 		class Item2
 		{
@@ -9442,17 +9449,6 @@ class Mission
 		};
 		class Item158
 		{
-			dataType="Marker";
-			position[]={15164.011,18.129999,17288.883};
-			name="cache_dest_ar";
-			text="Cache Destruction Area";
-			type="mil_box";
-			colorName="ColorRed";
-			id=259;
-			atlOffset=0.22999954;
-		};
-		class Item159
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -9467,6 +9463,7 @@ class Mission
 			};
 			id=262;
 			type="Land_Cargo20_red_F";
+			atlOffset=-2.0980835e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -9528,6 +9525,44 @@ class Mission
 				};
 				nAttributes=3;
 			};
+		};
+		class Item159
+		{
+			dataType="Marker";
+			position[]={15349.449,0,15798.305};
+			name="marker_1";
+			text="Boat Dock";
+			type="b_naval";
+			id=263;
+			atlOffset=6.7378078;
+		};
+		class Item160
+		{
+			dataType="Marker";
+			position[]={15201.667,18.531454,17164.58};
+			name="marker_2";
+			text="Medical Area";
+			type="b_med";
+			id=264;
+		};
+		class Item161
+		{
+			dataType="Marker";
+			position[]={15099.399,17.91,17245.93};
+			name="marker_3";
+			text="Motor Pool";
+			type="b_motor_inf";
+			id=265;
+		};
+		class Item162
+		{
+			dataType="Marker";
+			position[]={15153.429,18.014238,17280.643};
+			name="marker_4";
+			text="Cache Destruction Area";
+			type="b_Ordnance";
+			colorName="ColorRed";
+			id=266;
 		};
 	};
 };
