@@ -4,7 +4,7 @@ if (hasInterface) then {
 	//butts_addac = compile preprocessFileLineNumbers "butts\b_actions.sqf";
 
 	[player] execVM "butts\b_actions.sqf";
-//	[player] execVM "butts\pad_lights.sqf";
+
 	//butts scripts
 	butts_fuel = compile preprocessFileLineNumbers "butts\butts_veh_refuel.sqf";
 	butts_at = compile preprocessFileLineNumbers "butts\uav_at.sqf";
