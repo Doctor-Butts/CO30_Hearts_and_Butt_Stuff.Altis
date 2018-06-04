@@ -20,8 +20,6 @@ if (hasInterface) then {
 	butts_falc = compile preprocessFileLineNumbers "butts\uav_falcon.sqf";
 	butts_sent = compile preprocessFileLineNumbers "butts\uav_sentinel.sqf";
 	butts_stomp = compile preprocessFileLineNumbers "butts\uav_stomper.sqf";
-	butts_blow = compile preprocessFileLineNumbers "butts\cache_destruct.sqf";
-	butts_cache_tp = compile preprocessFileLineNumbers "butts\cache_teleport.sqf";
 	//butts_addac = compile preprocessFileLineNumbers "butts\b_actions.sqf";
 	
 };

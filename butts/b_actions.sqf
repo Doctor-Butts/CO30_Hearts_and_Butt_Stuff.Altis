@@ -59,12 +59,6 @@ _baction = ["butts_centurion", "Spawn Centurion", "\A3\ui_f\data\igui\cfg\simple
 //let engineer spawn autonomous spartan at btc create object
 _baction = ["butts_spartan", "Spawn Spartan", "\A3\ui_f\data\igui\cfg\simpleTasks\types\defend_ca.paa", {["Open",true ] spawn butts_spartan}, {true}, {}, [], [], 5] call ace_interact_menu_fnc_createAction;
 [btc_create_object, 0, ["ACE_MainActions","Butts"], _baction] call ace_interact_menu_fnc_addActionToObject;
-// this will enable the cache to be destroyed at the bomb house
-_baction = ["butts_detonate", "Detonate Cache", "\A3\ui_f\data\igui\cfg\simpleTasks\types\destroy_ca.paa", {["Open",true ] spawn butts_blow}, {true}, {}, [], [0,0,0], 5] call ace_interact_menu_fnc_createAction;
-[butts_board, 0, ["ACE_MainActions"], _baction] call ace_interact_menu_fnc_addActionToObject;
-// admin command to teleport cache to bomb house
-_baction = ["butts_tp_cahce", "Teleport Cache", "\A3\ui_f\data\igui\cfg\simpleTasks\types\interact_ca.paa", {["Open",true ] spawn butts_cache_tp}, {true}, {}, [], [0,0,0], 5] call ace_interact_menu_fnc_createAction;
-[blow_house, 0, ["ACE_MainActions"], _baction] call ace_interact_menu_fnc_addActionToObject;
 // ensures that praetor can be placed
 /* _baction = ["Place", "Place", "\A3\ui_f\data\map\markers\military\end_CA.paa", {(_this select 0) spawn btc_fnc_log_place}, {!btc_log_placing}] call ace_interact_menu_fnc_createAction;
 {["B_AAA_System_01_F", 0, ["ACE_MainActions","Butts"], _baction] call ace_interact_menu_fnc_addActionToClass; */

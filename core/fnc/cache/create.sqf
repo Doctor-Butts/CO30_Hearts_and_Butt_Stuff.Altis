@@ -19,6 +19,7 @@ for "_i" from 1 to (1 + round random 3) do {
     [btc_cache_obj,_holder, _pos_type] call btc_fnc_create_attachto;
 };
 
+
 if (btc_debug_log) then {diag_log format ["CACHE SPAWNED: ID %1 POS %2",btc_cache_n,btc_cache_pos];};
 
 if (btc_debug) then {

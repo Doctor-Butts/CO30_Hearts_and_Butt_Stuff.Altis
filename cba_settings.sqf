@@ -342,24 +342,16 @@ asr_ai3_rearming_rearm_fak = 1;
 asr_ai3_rearming_rearm_mags = 3;
 asr_ai3_skills_debug_setcamo = false;
 asr_ai3_skills_debug_setskill = false;
-asr_ai3_skills_packNVG = true;
+asr_ai3_skills_packNVG = false;
 asr_ai3_skills_setskills = true;
 asr_ai3_skills_teamsuperai = true;
-
-// Bundeswehr
-BWA3_NaviPad_showMembers = true;
 
 // NIArms
 niarms_magSwitch = true;
 
 // STUI Settings
-STHud_Settings_ColourBlindMode = "Normal";
-STHud_Settings_Font = "PuristaSemibold";
-STHud_Settings_HUDMode = 3;
-STHud_Settings_Occlusion = true;
-STHud_Settings_RemoveDeadViaProximity = true;
-STHud_Settings_SquadBar = false;
-STHud_Settings_TextShadow = 1;
+STHud_Settings_RemoveDeadViaProximity = false;
+
 
 // TFAR - clientside settings
 TFAR_default_radioVolume = 7;
