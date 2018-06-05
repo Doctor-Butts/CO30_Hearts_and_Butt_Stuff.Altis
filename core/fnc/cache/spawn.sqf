@@ -1,11 +1,16 @@
+// Params: A building is passed in from /core/fnc/find_pos.sqf
 
-private ["_n_pos","_max_pos"];
+// Randomly select one of the building's preset positions
+btc_cache_pos = selectRandom (_this buildingPos -1);
 
-_n_pos = 0;
-while {format ["%1", _this buildingPos _n_pos] != "[0,0,0]" } do {_n_pos = _n_pos + 1};
-_max_pos = _n_pos;
-_n_pos   = floor (random _max_pos);
+// If the building doesn't have any preset positions, nothing is returned
+// Try again I guess...
+if (isNil "btc_cache_pos" || count btc_cache_pos <= 1) exitWith
+{
+	[] spawn {[] call btc_fnc_cache_find_pos;};
 
-btc_cache_pos = (_this buildingPos _n_pos);
-if (btc_cache_pos distance [0,0,0] < 10) exitWith {[] spawn {[] call btc_fnc_cache_find_pos;};};
+	// Todo: Spawn the cache somewhere outside the invalid building and throw a 
+	// camonet over it instead trying again.
+};
+
 call btc_fnc_cache_create;
