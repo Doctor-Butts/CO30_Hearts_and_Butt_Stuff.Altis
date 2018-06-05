@@ -5,7 +5,7 @@ btc_cache_pos = selectRandom (_this buildingPos -1);
 
 // If the building doesn't have any preset positions, nothing is returned
 // Try again I guess...
-if (isNil "btc_cache_pos") exitWith
+if (isNil "btc_cache_pos" || count btc_cache_pos <= 1) exitWith
 {
 	[] spawn {[] call btc_fnc_cache_find_pos;};
 
